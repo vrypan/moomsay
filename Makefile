@@ -16,8 +16,8 @@ clean:
 .PHONY: all clean local tag tag-minor tag-major releases
 
 moomsay: $(MOOMSAY_SOURCES)
-	@echo -e "$(GREEN)Building sc-mon ${MOOMSAY_VERSION} $(NC)"
-	go build -o $@ -ldflags "-w -s -X main.MOOMSAY_VERSION=${MOOMSAY_VERSION}"
+	@echo -e "$(GREEN)Building moomsay ${MOOMSAY_VERSION} $(NC)"
+	go build -o $@ -ldflags "-w -s -X main.VERSION=${MOOMSAY_VERSION}"
 
 tag:
 	./bin/auto_increment_tag.sh patch

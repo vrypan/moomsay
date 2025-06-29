@@ -6,6 +6,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var VERSION string
+
 var rootCmd = &cobra.Command{
 	Use:   "moomsay",
 	Short: "A CLI app with speech bubbles",
