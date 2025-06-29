@@ -31,7 +31,7 @@ var sayCmd = &cobra.Command{
 			for scanner.Scan() {
 				inputLines = append(inputLines, scanner.Text())
 			}
-			bubbleText = strings.Join(inputLines, " ")
+			bubbleText = strings.Join(inputLines, "\n")
 		}
 
 		Say(moomId, bubbleText, isReply)
