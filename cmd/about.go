@@ -13,9 +13,12 @@ var aboutCmd = &cobra.Command{
 		moomId := 1 + rand.Intn(10000)
 
 		isReply := false
-		bubbleText := `Based on MoomBirdsAtHome, an NFT project by NFTtank: https://x.com/moombirbsathome
-moomsay is a project by https://farcaster.xyz/vrypan
-		`
+		bubbleText := `moomsay is a command line tool by https://farcaster.xyz/vrypan
+
+moomsay is also an art project, about the history of computer graphics, combining ANSI art, Pixel art, and NFTs.
+
+Based on MoomBirdsAtHome, an NFT project by NFTtank: https://x.com/moombirbsathome
+`
 
 		Say(moomId, bubbleText, isReply)
 		fmt.Println()
